@@ -1,0 +1,3 @@
+# LearningC#
+
+Starting learning C#
