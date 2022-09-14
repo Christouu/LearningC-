@@ -8,23 +8,13 @@
             Bike bike = new Bike();
             Boat boat = new Boat();
 
-            Console.WriteLine(car.speed);
-            Console.WriteLine(car.wheels);
-            car.Go();
-
-            Console.WriteLine(bike.speed);
-            Console.WriteLine(bike.wheels);
-            bike.Go();
-
-            Console.WriteLine(boat.speed);
-            Console.WriteLine(boat.wheels);
-            boat.Go();
+           Vehicle vehicle = new Vehicle();
 
             Console.ReadKey();
         }
     }
 
-    class Vehicle
+     class Vehicle
     {
         public int speed = 0;
 
@@ -37,15 +27,18 @@
     class Car : Vehicle
     {
         public int wheels = 4;
+        int maxSpeed = 500;
     }
 
     class Bike : Vehicle
     {
         public int wheels = 2;
+        int maxSpeed = 50;
     }
 
     class Boat : Vehicle
     {
         public int wheels = 0;
+        int maxSpeed = 100;
     }
 }
